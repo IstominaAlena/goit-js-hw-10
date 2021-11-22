@@ -1,0 +1,23 @@
+{{!-- <svg width='50'>
+  <use href='{{flags.svg}}'></use>
+</svg> --}}
+<div class='container'>
+  <img class='flag' src='{{flags.svg}}' alt="{{name.official}}'s flag" width='50' />
+  <h2>{{name.official}}</h2>
+</div>
+<div class='container'>
+  <h3>Capital:</h3>
+  <p>{{capital}}</p>
+</div>
+<div class='container'>
+  <h3>Population:</h3>
+  <p>{{population}}</p>
+</div>
+<div class='language-container'>
+  <h3>Languages:</h3>
+  <ul class='language-list'>
+    {{#each languages}}
+      <li>{{this}}</li>
+    {{/each}}
+  </ul>
+</div>
