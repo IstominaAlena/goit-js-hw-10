@@ -22,9 +22,7 @@ function onInputFn(evt) {
     refs.countryList.innerHTML = '';
     return;
   }
-  fetchCountries(countryName)
-    .then(searchInfo => countriesListCheck(searchInfo))
-    .catch(errorCheckFn);
+  fetchCountries(countryName).then(countriesListCheck).catch(errorCheckFn);
 }
 
 function countriesListCheck(countryData) {
