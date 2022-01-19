@@ -38,6 +38,7 @@ function countriesListCheck(countryData) {
 }
 
 function renderCountryCard(data) {
+  console.log(data);
   refs.countryContainer.innerHTML = countryCardTemplate(data[0]);
 }
 function renderCountryList(data) {
